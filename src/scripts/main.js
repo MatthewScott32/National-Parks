@@ -16,6 +16,12 @@ fetch(apiAddress)
     const parkInfo = ""
     for (i = 0; i <= parsedParks.length; i++) {
         parkHTML(parsedParks[i]);
-        // parkInfo += parsedParks[i]
+        parkInfo += parsedParks[i]
+        if(i.vistited = true) {
+            parkInfo = document.getElementByIdName('#visited').style.color = "green";
+        }
+        else { 
+        parkInfo = document.getElementByIdName('#notVisited').style.color = "red";
+        }
     }
 })
